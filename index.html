@@ -25,7 +25,8 @@
 					<ul>
 						<li><a href="#one" class="active">About Me</a></li>
 						<li><a href="#two">Skills I Can Offer</a></li>
-						<li><a href="#three">Some of My Work</a></li>
+						<li><a href="#three">My Philosophy</a></li>
+						<li><a href="#four">My Projects</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -70,7 +71,6 @@
 							<section id="two">
 								<div class="container">
 									<h3>Skills I Can Offer</h3>
-									<!-- <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p> -->
 									<ul class="feature-icons">
 										<li class="icon solid fa-code">Programming and Software Development</li>
 										<li class="icon solid fa-dna">Background in Biology and Genetics</li>
@@ -85,59 +85,32 @@
 						<!-- Three -->
 							<section id="three">
 								<div class="container" style="position: relative;">
-									<h3>My Work at a Glance</h3>
+									<h3>Data as an Artform</h3>
+									<p>
+										With the field of science moving torwards big data, it's easy to get lost.</br>
+										My goal is to highlight data in a way everyone can understand, and to tell a visual story with every dataset.
+									</p>
 
-									<!-- <div class="box" style="height: 30em; display: flex; justify-content: center; align-items: center;">
-										<img class="slide_img" src="images/pangolin_identity.png" style="width: 100%;">
-										<img class="slide_img" src="images/compare_cluster.png" style="width: 100%;">
-										<img class="slide_img" src="images/s2_analysis.png" style="width: 100%;">		
+									<div class="slide_box" style="height: 30em; display: flex; justify-content: center; align-items: center; position: relative;">
+										<img class="slide_img fade" src="images/s2_analysis.png" style="width: 100%;">
+										<img class="slide_img fade" src="images/pangolin_identity.png" style="width:100%;">
+										<img class="slide_img fade" src="images/compare_cluster.png" style="width: 100%;">
+										<img class="slide_img fade" src="images/differential_expression.png">
+										<img class="slide_img fade" src="images/cov_genome_spike.png">
+										<img class="slide_img fade" src="images/scatter_filt_nc_ng.png" style="width: 75%;">
+										
+										<button class="button icon solid fa-chevron-left" onclick="plusDivs(-1)" style="position: absolute; top: 45%; left: 3px;"></button>
+										<button class="button icon solid fa-chevron-right" onclick="plusDivs(1)" style="position: absolute; top: 45%; right: 3px;"></button>
 									</div>
-									
-									<button class="button icon solid fa-chevron-left" onclick="plusDivs(-1)" style="position: absolute; top: 50%;"></button>
-									<button class="button icon solid fa-chevron-right" onclick="plusDivs(1)" style="position: absolute; top: 50%; right: 0;"></button> -->
 
 								</div>
 
-								<div class="slide_box" style="height: 30em; display: flex; justify-content: center; align-items: center; position: relative;">
-									<img class="slide_img" src="images/pangolin_identity.png" style="width: 95%;">
-									<img class="slide_img" src="images/compare_cluster.png" style="width: 95%;">
-									<img class="slide_img" src="images/s2_analysis.png" style="width: 95%;">
-									
-									<button class="button icon solid fa-chevron-left" onclick="plusDivs(-1)" style="position: absolute; top: 40%; left: 3px;"></button>
-									<button class="button icon solid fa-chevron-right" onclick="plusDivs(1)" style="position: absolute; top: 40%; right: 3px;"></button>
-								</div>
-								
-								<!-- <button class="button icon solid fa-chevron-left" onclick="plusDivs(-1)" style="position: absolute; top: 50%;"></button>
-								<button class="button icon solid fa-chevron-right" onclick="plusDivs(1)" style="position: absolute; top: 50%; right: 0;"></button> -->
-
-
-								<script>
-									var slideIndex = 1;
-									showDivs(slideIndex);
-									
-									function plusDivs(n) {
-									  showDivs(slideIndex += n);
-									}
-									
-									function showDivs(n) {
-									  var i;
-									  var x = document.getElementsByClassName("slide_img");
-									  if (n > x.length) {slideIndex = 1}
-									  if (n < 1) {slideIndex = x.length}
-									  for (i = 0; i < x.length; i++) {
-										x[i].style.display = "none";  
-									  }
-									  x[slideIndex-1].style.display = "block";  
-									}
-								</script>
-
-								
 							</section>
 
 						<!-- Four -->
 							<section id="four">
 								<div class="container">
-									<h3>Some of My Work</h3>
+									<h3>Projects</h3>
 									<p>A closer look at the details and methods behind some of my favorite projects.</p></br>
 									<div class="features">
 										<article>
@@ -172,45 +145,6 @@
 								</div>
 							</section>
 
-						
-						<!-- Three -->
-							<!-- <section id="three">
-								<div class="container">
-									<h3>Some of My Work</h3>
-									<p>A closer look at the details and methods behind some of my favorite projects.</p></br>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pangolin_identity.png" alt="" /></a>
-											<div class="inner">
-												<h4>Research on Intermediary SARS-CoV-2 Hosts</h4>
-												<p>A research report highlighting the critical role of bioinformatics when looking into the origins of SARS-CoV-2.</br></br>
-													Through the use of comparative genomics and phylogenetic analysis, I build upon
-													current research and show why COVID-19 may have come from pangolins.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/python-logo.png" alt="" /></a>
-											<div class="inner">
-												<h4>Bioinformatics Scripts and Algorithms</h4>
-												<p>A collection of python scripts for manipulating and analyzing sequence data.
-													Designed to increase productivity by providing computational solutions for key research problems.</br></br>
-													Modularly written with ease of use in mind, all scripts require no additional downloads
-													and feature command line functionality to ensure compatibility with existing pipelines.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/github_logo.png" alt="" /></a>
-											<div class="inner">
-												<h4>...And More On the Way</h4>
-												<p>I'm always looking to improve my skills. Check out my current progress and other projects on GitHub!</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section> -->
-
 					</div>
 
 				<!-- Footer -->
@@ -232,6 +166,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideshow.js"></script>
 
 	</body>
 </html>
