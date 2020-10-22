@@ -3334,5 +3334,12 @@ input, select, textarea {
   }
 
 /* Slideshow Dot */
-
+.dot {
+	background: #888;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 0.25em;
+	height: 1em;
+	width: 1em;
+}
   
