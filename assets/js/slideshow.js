@@ -2,27 +2,23 @@
  * Slideshow JS
  */
 
-var curr_index = 1;
-showDivs(curr_index);
+var curr_index = 0;
+play_slides();
 
-function plusDivs(n) {
-  showDivs(curr_index += n);
-}
-
-function showDivs(n) {
+function play_slides() {
   var i;
-  var x = document.getElementsByClassName("slide_img");
-  if (n > x.length) {
-      curr_index = 1
-    }
+  var slides = document.getElementsByClassName("slide_img");
 
-  if (n < 1) {
-      curr_index = x.length
-    }
-
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
   }
 
-  x[curr_index - 1].style.display = "block";  
+  curr_index++;
+
+  if (curr_index > slides.length) {
+    curr_index = 1
+  }
+
+  slides[curr_index - 1].style.display = "block";
+  setTimeout(play_slides, 5000)
 }
